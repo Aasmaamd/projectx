@@ -1,0 +1,149 @@
+/* Login & Signup Container */
+.login-signup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    width: 40%;
+    max-width: 450px;
+    margin: 120px auto; /* Centering */
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+/* Heading */
+.login-signup h1 {
+    margin-bottom: 15px;
+    font-size: 26px;
+    color: #333;
+    text-align: center;
+}
+
+/* Form Fields */
+.entries {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+}
+
+.entries input {
+    padding: 12px;
+    border: 1px solid #626262;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 16px;
+}
+
+/* Button Container */
+.btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.btn button {
+    padding: 14px;
+    background-color: #891d1d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    width: 100%;
+    transition: background 0.3s ease-in-out;
+}
+
+.btn button:hover {
+    background-color: #ed8686;
+}
+
+/* Login Link */
+.login-link {
+    color: #007BFF;
+    cursor: pointer;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Terms & Conditions */
+.terms {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.terms input {
+    margin-right: 5px;
+}
+
+.terms a {
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+/* Responsive Design */
+
+/* Tablets */
+@media (max-width: 1024px) {
+    .login-signup {
+        width: 50%;
+        padding: 25px;
+    }
+
+    .btn button {
+        font-size: 16px;
+    }
+}
+
+/* Mobile Screens */
+@media (max-width: 768px) {
+    .login-signup {
+        width: 70%;
+        padding: 20px;
+    }
+
+    .login-signup h1 {
+        font-size: 24px;
+    }
+
+    .entries input {
+        font-size: 14px;
+    }
+
+    .btn button {
+        font-size: 16px;
+    }
+}
+
+/* Small Mobile Screens */
+@media (max-width: 480px) {
+    .login-signup {
+        width: 85%;
+        padding: 15px;
+    }
+
+    .login-signup h1 {
+        font-size: 22px;
+    }
+
+    .entries input {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .btn button {
+        font-size: 14px;
+        padding: 12px;
+    }
+
+    .terms {
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,157 @@
+.hero {
+    height: 100vh;
+    background: linear-gradient(180deg, #fde1ff, #e1ffea22 60%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10%;
+    gap: 20px;
+}
+
+/* LEFT SIDE */
+.hero-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    padding-left: 100px;
+    line-height: 1.1;
+}
+
+.hero-left h2 {
+    color: #090909;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.hero-left p {
+    color: #171717;
+    font-size: 80px;
+    font-weight: 700;
+    max-width: 500px;
+}
+
+/* HAND ICON */
+.hero-hand-icon {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.hero-hand-icon img {
+    width: 80px;
+}
+
+/* BUTTON */
+.hero-latest-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    width: 280px;
+    height: 60px;
+    border-radius: 50px;
+    margin-top: 30px;
+    background: #ff4141;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.hero-latest-btn:hover {
+    background: #e63838;
+}
+
+/* RIGHT SIDE */
+.hero-right {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* RESPONSIVE DESIGN */
+
+/* Large Screens */
+@media (max-width: 1200px) {
+    .hero-left p {
+        font-size: 70px;
+    }
+    .hero-left {
+        padding-left: 50px;
+    }
+}
+
+/* Medium Screens (Tablets) */
+@media (max-width: 992px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        height: auto;
+        padding: 5% 5%;
+    }
+
+    .hero-left {
+        padding-left: 0;
+        align-items: center;
+    }
+
+    .hero-left p {
+        font-size: 60px;
+    }
+
+    .hero-hand-icon img {
+        width: 70px;
+    }
+
+    .hero-latest-btn {
+        width: 250px;
+        height: 55px;
+        font-size: 16px;
+    }
+
+    .hero-right {
+        margin-top: 20px;
+    }
+}
+
+/* Small Screens (Mobile) */
+@media (max-width: 768px) {
+    .hero-left p {
+        font-size: 50px;
+    }
+
+    .hero-hand-icon img {
+        width: 60px;
+    }
+
+    .hero-latest-btn {
+        width: 220px;
+        height: 50px;
+        font-size: 15px;
+    }
+}
+
+/* Extra Small Screens */
+@media (max-width: 480px) {
+    .hero-left h2 {
+        font-size: 22px;
+    }
+
+    .hero-left p {
+        font-size: 40px;
+    }
+
+    .hero-hand-icon img {
+        width: 50px;
+    }
+
+    .hero-latest-btn {
+        width: 200px;
+        height: 45px;
+        font-size: 14px;
+    }
+}

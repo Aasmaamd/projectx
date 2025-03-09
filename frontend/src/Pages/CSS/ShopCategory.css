@@ -1,0 +1,121 @@
+/* Banner */
+.shopcategory-banner {
+    display: block;
+    margin: 30px auto;
+    width: 82%;
+    max-width: 1200px;
+}
+
+/* Sorting & Index Section */
+.shop-category-indexSort {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px auto;
+    width: 80%;
+    max-width: 1200px;
+}
+
+/* Sort Dropdown */
+.shopcategory-sort {
+    padding: 10px 20px;
+    border-radius: 40px;
+    border: 1px solid #888;
+    font-size: 16px;
+    cursor: pointer;
+    background: #fff;
+    transition: border 0.3s ease-in-out, box-shadow 0.3s;
+}
+
+.shopcategory-sort:hover {
+    border: 1px solid #555;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Sorting Label */
+.shopcategory-indexSort p span {
+    font-weight: 600;
+}
+
+/* Product Display Grid */
+.shopcategory-products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 80px;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 1200px;
+}
+
+/* Explore More Button */
+.explorezz {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: gainsboro;
+    border-radius: 75px;
+    font-size: 20px;
+    height: 70px;
+    width: 240px;
+    margin: 150px auto;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out, transform 0.2s;
+}
+
+.explorezz:hover {
+    background: #d3d3d3;
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+
+/* Tablets */
+@media (max-width: 1024px) {
+    .shop-category-indexSort {
+        width: 90%;
+    }
+
+    .shopcategory-products {
+        width: 90%;
+    }
+}
+
+/* Mobile Screens */
+@media (max-width: 768px) {
+    .shop-category-indexSort {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 95%;
+        gap: 10px;
+    }
+
+    .shopcategory-sort {
+        width: 100%;
+        text-align: center;
+    }
+
+    .shopcategory-products {
+        justify-content: center;
+        width: 95%;
+        row-gap: 50px;
+    }
+}
+
+/* Small Mobile Screens */
+@media (max-width: 480px) {
+    .shopcategory-banner {
+        width: 90%;
+    }
+
+    .shopcategory-products {
+        row-gap: 40px;
+    }
+
+    .explorezz {
+        font-size: 18px;
+        height: 60px;
+        width: 200px;
+    }
+}

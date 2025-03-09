@@ -1,0 +1,111 @@
+.new-collections {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 80px;
+    padding: 20px;
+    text-align: center;
+}
+
+.new-collections h1 {
+    color: #171717;
+    font-size: 48px;
+    font-weight: 600;
+}
+
+.new-collections hr {
+    width: 180px;
+    height: 5px;
+    border-radius: 10px;
+    background: #252525;
+}
+
+/* COLLECTIONS GRID */
+.collections {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
+    gap: 25px;
+    justify-content: center;
+    align-items: center;
+    max-width: 90vw;
+    margin: 50px auto 0;
+}
+
+.collections img {
+    width: 100%;
+    height: auto;
+    max-width: 350px; /* Adjusted for better balance */
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.collections img:hover {
+    transform: scale(1.05);
+}
+
+/* RESPONSIVE DESIGN */
+
+/* Large Screens */
+@media (max-width: 1200px) {
+    .new-collections h1 {
+        font-size: 42px;
+    }
+
+    .new-collections hr {
+        width: 150px;
+        height: 4px;
+    }
+
+    .collections img {
+        max-width: 320px;
+    }
+}
+
+/* Medium Screens (Tablets) */
+@media (max-width: 992px) {
+    .new-collections h1 {
+        font-size: 38px;
+    }
+
+    .collections {
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    }
+
+    .collections img {
+        max-width: 280px;
+    }
+}
+
+/* Small Screens (Mobile) */
+@media (max-width: 768px) {
+    .new-collections h1 {
+        font-size: 32px;
+    }
+
+    .collections {
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        gap: 15px;
+    }
+
+    .collections img {
+        max-width: 240px;
+    }
+}
+
+/* Extra Small Screens */
+@media (max-width: 480px) {
+    .new-collections h1 {
+        font-size: 28px;
+    }
+
+    .collections {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 10px;
+    }
+
+    .collections img {
+        max-width: 200px;
+    }
+}
